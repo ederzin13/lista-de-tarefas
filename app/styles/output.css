@@ -18,6 +18,7 @@
     --color-orange: #fe8019;
     --color-green: #458588;
     --color-cream: #fbf1c7;
+    --color-cream-dark: #665c54;
     --text-h3: 1.125rem;
     --text-h1-mbl: 2rem;
     --text-h2-mbl: 1.3rem;
@@ -1008,6 +1009,9 @@
   .m-5 {
     margin: calc(var(--spacing) * 5);
   }
+  .m-15 {
+    margin: calc(var(--spacing) * 15);
+  }
   .filter {
     display: flex;
     flex-wrap: wrap;
@@ -1178,6 +1182,9 @@
   .h-110 {
     height: calc(var(--spacing) * 110);
   }
+  .h-150 {
+    height: calc(var(--spacing) * 150);
+  }
   .w-40 {
     width: calc(var(--spacing) * 40);
   }
@@ -1214,6 +1221,9 @@
   }
   .flex-wrap {
     flex-wrap: wrap;
+  }
+  .content-center {
+    align-content: center;
   }
   .content-evenly {
     align-content: space-evenly;
@@ -1289,6 +1299,12 @@
   }
   .text-bg {
     color: var(--color-bg);
+  }
+  .text-bg-light {
+    color: var(--color-bg-light);
+  }
+  .text-cream-dark {
+    color: var(--color-cream-dark);
   }
   .text-text {
     color: var(--color-text);
