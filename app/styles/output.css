@@ -1152,11 +1152,6 @@
       cursor: not-allowed;
     }
   }
-  .drawer-content {
-    grid-column-start: 2;
-    grid-row-start: 1;
-    min-width: calc(0.25rem * 0);
-  }
   .container {
     width: 100%;
     @media (width >= 40rem) {
@@ -1395,28 +1390,9 @@
     width: 4rem;
     height: 4rem;
   }
-  .size-\[6rem\] {
-    width: 6rem;
-    height: 6rem;
-  }
-  .size-\[8rem\] {
-    width: 8rem;
-    height: 8rem;
-  }
-  .size-\[10rem\] {
-    width: 10rem;
-    height: 10rem;
-  }
-  .size-\[96px\] {
-    width: 96px;
-    height: 96px;
-  }
   .size-\[160px\] {
     width: 160px;
     height: 160px;
-  }
-  .h-10 {
-    height: calc(var(--spacing) * 10);
   }
   .h-15 {
     height: calc(var(--spacing) * 15);
@@ -1433,14 +1409,11 @@
   .h-150 {
     height: calc(var(--spacing) * 150);
   }
-  .h-180 {
-    height: calc(var(--spacing) * 180);
+  .h-200 {
+    height: calc(var(--spacing) * 200);
   }
-  .w-10 {
-    width: calc(var(--spacing) * 10);
-  }
-  .w-20 {
-    width: calc(var(--spacing) * 20);
+  .h-250 {
+    height: calc(var(--spacing) * 250);
   }
   .w-40 {
     width: calc(var(--spacing) * 40);
@@ -1506,9 +1479,6 @@
   .gap-2 {
     gap: calc(var(--spacing) * 2);
   }
-  .self-center {
-    align-self: center;
-  }
   .overflow-x-hidden {
     overflow-x: hidden;
   }
@@ -1534,9 +1504,6 @@
   .bg-cream {
     background-color: var(--color-cream);
   }
-  .bg-cream-dark {
-    background-color: var(--color-cream-dark);
-  }
   .bg-green {
     background-color: var(--color-green);
   }
@@ -1552,17 +1519,8 @@
   .text-center {
     text-align: center;
   }
-  .text-justify {
-    text-align: justify;
-  }
-  .align-middle {
-    vertical-align: middle;
-  }
   .text-h1-mbl {
     font-size: var(--text-h1-mbl);
-  }
-  .text-h2 {
-    font-size: var(--text-h2);
   }
   .text-h2-mbl {
     font-size: var(--text-h2-mbl);
@@ -1627,10 +1585,6 @@
   .ease-in-out {
     --tw-ease: var(--ease-in-out);
     transition-timing-function: var(--ease-in-out);
-  }
-  .ease-out {
-    --tw-ease: var(--ease-out);
-    transition-timing-function: var(--ease-out);
   }
   .btn-soft {
     &:not(.btn-active, :hover, :active:focus, :focus-visible, :disabled, [disabled], .btn-disabled) {
