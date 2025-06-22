@@ -17,8 +17,29 @@
             <header
                 class="navbar bg-bg shadow-sm flex flex-wrap items-center justify-between gap-2"
             >
-                <a href="" class="btn btn-ghost text-h3">.atarefado</a>
-                <i class="fa-solid fa-bars mr-4"></i>
+                <a href="/app/index.html" class="btn btn-ghost text-h3"
+                    >.atarefado</a
+                >
+
+                <div class="hidden md:flex gap-1">
+                    <a href="pages/form.html" class="btn btn-ghost">Novo</a>
+                </div>
+
+                <div class="dropdown dropdown-end bg-bg md:hidden">
+                    <div tabindex="0" role="button" class="btn m-1 bg-bg">
+                        <i class="fa-solid fa-bars text-cream"></i>
+                    </div>
+                    <ul
+                        tabindex="0"
+                        class="dropdown-content menu bg-bg-light rounded-box z-1 w-52 p-2 drop-shadow-sm"
+                    >
+                        <li>
+                            <a href="/app/pages/form.html" class="btn btn-ghost"
+                                >Novo</a
+                            >
+                        </li>
+                    </ul>
+                </div>
             </header>
 
             <div class="flex items-center justify-center">
