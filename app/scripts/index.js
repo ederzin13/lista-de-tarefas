@@ -1,4 +1,5 @@
 import { Task } from "./Task.js";
+import { clear } from "./cleanForm.js";
 
 const form = document.getElementById("form");
 const modalAlert = document.getElementById("modalAlert");
@@ -24,5 +25,5 @@ form.addEventListener("submit", function (event) {
 
     let task = newTask(title, date, time, content);
 
-    console.log(task);
+    //console.log(task);
 });
