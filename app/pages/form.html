@@ -50,7 +50,7 @@
                 <div
                     class="container h-150 w-100 justify-center justify-items-center bg-cream mt-15 mb-40 rounded-md"
                 >
-                    <form class="text-bg" action="">
+                    <form class="text-bg" action="" id="form">
                         <label
                             class="input bg-cream border-solid border-bg mt-8 w-80 h-12"
                         >
@@ -64,7 +64,7 @@
                             >
                                 <span class="label">
                                     <i class="fa-solid fa-calendar-days"></i>
-                                    <input type="date" />
+                                    <input type="date" id="date" />
                                 </span>
                             </label>
                             <label
@@ -72,7 +72,7 @@
                             >
                                 <span class="label">
                                     <i class="fa-solid fa-clock"></i>
-                                    <input type="time" />
+                                    <input type="time" id="time" />
                                 </span>
                             </label>
                         </div>
@@ -80,14 +80,19 @@
                         <textarea
                             class="textarea bg-cream border-solid border-bg h-72"
                             placeholder="Content..."
+                            id="content"
                         ></textarea>
 
                         <div class="flex gap-x-4 justify-center mt-8 text-bg">
                             <div class="tooltip" data-tip="Clear">
-                                <i class="fa-solid fa-circle-xmark"></i>
+                                <button>
+                                    <i class="fa-solid fa-circle-xmark"></i>
+                                </button>
                             </div>
                             <div class="tooltip" data-tip="Save">
-                                <i class="fa-solid fa-circle-check"></i>
+                                <button type="submit">
+                                    <i class="fa-solid fa-circle-check"></i>
+                                </button>
                             </div>
                         </div>
                     </form>
@@ -108,5 +113,7 @@
             src="https://kit.fontawesome.com/dd7316312f.js"
             crossorigin="anonymous"
         ></script>
+
+        <script type="module" src="/app/scripts/index.js"></script>
     </body>
 </html>
