@@ -30,7 +30,7 @@
 
 html {
     color: #fbf1c7;
-    background-color: #282828;
+    background-color: var(--color-bg);
     font-family: "Lekton", monospace;
 }
 
@@ -58,4 +58,8 @@ input[type="time"]::-webkit-calendar-picker-indicator {
 input[type="date"]::-webkit-calendar-picker-indicator {
     display: none;
     -webkit-appearance: none;
+}
+
+.modal::backdrop {
+    background-color: #3c3836;
 }

@@ -1,13 +1,13 @@
 export class Task {
     title;
-    content;
     date;
     time;
+    content;
 
-    constructor(title, content, date = null, time = null) {
+    constructor(title, date, time, content) {
         this.title = title;
-        this.content = content;
         this.date = date;
         this.time = time;
+        this.content = content;
     }
 }
