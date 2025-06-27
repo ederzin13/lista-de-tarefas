@@ -1,8 +1,11 @@
 import { Task } from "./Task.js";
 import { clear } from "./cleanForm.js";
+import { Storage } from "./Storage.js";
 
 const form = document.getElementById("form");
 const modalAlert = document.getElementById("modalAlert");
+
+const storage = new Storage();
 
 function newTask(title, date, time, content) {
     let task = new Task(title, date, time, content);
@@ -25,5 +28,9 @@ form.addEventListener("submit", function (event) {
 
     let task = newTask(title, date, time, content);
 
-    //console.log(task);
+    storage.addTask(task);
+
+    storage.save();
+
+    form.reset();
 });
