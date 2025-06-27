@@ -1691,6 +1691,34 @@
   .table {
     display: table;
   }
+  .size-\[3\.5rem\] {
+    width: 3.5rem;
+    height: 3.5rem;
+  }
+  .size-\[3\.7em\] {
+    width: 3.7em;
+    height: 3.7em;
+  }
+  .size-\[3\.7m\] {
+    width: 3.7m;
+    height: 3.7m;
+  }
+  .size-\[3\.7rem\] {
+    width: 3.7rem;
+    height: 3.7rem;
+  }
+  .size-\[3\.8rem\] {
+    width: 3.8rem;
+    height: 3.8rem;
+  }
+  .size-\[3\.rem\] {
+    width: 3.rem;
+    height: 3.rem;
+  }
+  .size-\[3rem\] {
+    width: 3rem;
+    height: 3rem;
+  }
   .size-\[4rem\] {
     width: 4rem;
     height: 4rem;
@@ -1789,6 +1817,9 @@
   }
   .gap-x-4 {
     column-gap: calc(var(--spacing) * 4);
+  }
+  .self-center {
+    align-self: center;
   }
   .overflow-x-hidden {
     overflow-x: hidden;
@@ -1978,16 +2009,6 @@
   .md\:h-180 {
     @media (width >= 48rem) {
       height: calc(var(--spacing) * 180);
-    }
-  }
-  .md\:w-100 {
-    @media (width >= 48rem) {
-      width: calc(var(--spacing) * 100);
-    }
-  }
-  .md\:w-110 {
-    @media (width >= 48rem) {
-      width: calc(var(--spacing) * 110);
     }
   }
   .md\:w-130 {
