@@ -1,6 +1,7 @@
-import { Task } from "./Task.js";
+import { Task } from "../model/Task.js";
 import { clear } from "./cleanForm.js";
-import { Storage } from "./Storage.js";
+import { Storage } from "../model/Storage.js";
+import { input } from "./currentDate.js";
 
 const form = document.getElementById("form");
 const modalAlert = document.getElementById("modalAlert");
