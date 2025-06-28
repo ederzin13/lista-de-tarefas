@@ -10,6 +10,13 @@ Página simples de lista de tarefas!
 
 [Tailwind](https://tailwindcss.com/) em conjunto com [Daisyui](https://daisyui.com/?lang=pt)
 
+# Como rodar
+
+Instalar as dependências com NPM:
+```
+npm i
+```
+
 ## Cheklist | Indicadores de Desempenho (ID) dos Resultados de Aprendizagem (RA)
 
 ### RA1 - Utilizar Frameworks CSS para estilização de elementos HTML e criação de layouts responsivos.
