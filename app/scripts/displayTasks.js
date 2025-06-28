@@ -12,12 +12,12 @@ document.addEventListener("DOMContentLoaded", () => {
 
     tasks.forEach((task) => {
         const card = document.createElement("div");
-        card.className = "card bg-base-100 shadow p-4";
+        card.className = "card bg-orange shadow p-6 text-bg";
 
         card.innerHTML = `
-            <h2 class="text-xl font-bold">${task.title}</h2>
-            <p>Data: ${task.date}</p>
-            <p>Hora: ${task.time}</p>
+            <h3 class="text-xl font-bold mb-2">${task.title}</h3>
+            <p><i class="fa-solid fa-calendar-days"></i> ${task.date}</p>
+            <p><i class="fa-solid fa-clock"></i> ${task.time}</p>
             <p class="mt-2">${task.content}</p>
             `;
 

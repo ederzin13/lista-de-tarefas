@@ -1358,9 +1358,6 @@
       }
     }
   }
-  .static {
-    position: static;
-  }
   .dropdown-right {
     --anchor-h: right;
     --anchor-v: span-bottom;
@@ -1403,9 +1400,6 @@
         bottom: calc(0.25rem * 0);
       }
     }
-  }
-  .end-0 {
-    inset-inline-end: calc(var(--spacing) * 0);
   }
   .textarea {
     border: var(--border) solid #0000;
@@ -1472,18 +1466,6 @@
       cursor: not-allowed;
     }
   }
-  .modal-backdrop {
-    grid-column-start: 1;
-    grid-row-start: 1;
-    display: grid;
-    align-self: stretch;
-    justify-self: stretch;
-    color: transparent;
-    z-index: -1;
-    button {
-      cursor: pointer;
-    }
-  }
   .z-1 {
     z-index: 1;
   }
@@ -1531,9 +1513,6 @@
   }
   .m-1 {
     margin: calc(var(--spacing) * 1);
-  }
-  .m-15 {
-    margin: calc(var(--spacing) * 15);
   }
   .filter {
     display: flex;
@@ -1635,14 +1614,14 @@
   .mt-15 {
     margin-top: calc(var(--spacing) * 15);
   }
-  .mr-5 {
-    margin-right: calc(var(--spacing) * 5);
-  }
   .mr-15 {
     margin-right: calc(var(--spacing) * 15);
   }
-  .mb-5 {
-    margin-bottom: calc(var(--spacing) * 5);
+  .mb-2 {
+    margin-bottom: calc(var(--spacing) * 2);
+  }
+  .mb-6 {
+    margin-bottom: calc(var(--spacing) * 6);
   }
   .mb-7 {
     margin-bottom: calc(var(--spacing) * 7);
@@ -1826,14 +1805,8 @@
     width: 160px;
     height: 160px;
   }
-  .h-5 {
-    height: calc(var(--spacing) * 5);
-  }
   .h-7 {
     height: calc(var(--spacing) * 7);
-  }
-  .h-10 {
-    height: calc(var(--spacing) * 10);
   }
   .h-12 {
     height: calc(var(--spacing) * 12);
@@ -1932,18 +1905,6 @@
   .gap-x-4 {
     column-gap: calc(var(--spacing) * 4);
   }
-  .place-self-end {
-    place-self: end;
-  }
-  .self-end {
-    align-self: flex-end;
-  }
-  .self-end-safe {
-    align-self: safe flex-end;
-  }
-  .self-start {
-    align-self: flex-start;
-  }
   .overflow-x-hidden {
     overflow-x: hidden;
   }
@@ -1997,14 +1958,14 @@
   .mask-repeat {
     mask-repeat: repeat;
   }
-  .object-right {
-    object-position: right;
-  }
   .p-2 {
     padding: calc(var(--spacing) * 2);
   }
   .p-4 {
     padding: calc(var(--spacing) * 4);
+  }
+  .p-6 {
+    padding: calc(var(--spacing) * 6);
   }
   .py-4 {
     padding-block: calc(var(--spacing) * 4);
@@ -2022,6 +1983,9 @@
   }
   .text-h1-mbl {
     font-size: var(--text-h1-mbl);
+  }
+  .text-h2 {
+    font-size: var(--text-h2);
   }
   .text-h2-mbl {
     font-size: var(--text-h2-mbl);
