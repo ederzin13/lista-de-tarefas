@@ -8,4 +8,8 @@ export class Storage {
     save() {
         localStorage.setItem("tarefas", JSON.stringify(this.existingTasks));
     }
+
+    clear() {
+        localStorage.clear();
+    }
 }

@@ -34,4 +34,6 @@ form.addEventListener("submit", function (event) {
     storage.save();
 
     form.reset();
+
+    window.location.href = "task-list.html";
 });

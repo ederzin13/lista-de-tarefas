@@ -25,7 +25,7 @@
 
                 <div class="hidden md:flex gap-1">
                     <a
-                        href="pages/form.html"
+                        href="/app/pages/form.html"
                         class="btn btn-ghost hover:bg-bg-light text-cream"
                         >Novo</a
                     >
@@ -48,9 +48,41 @@
                 </div>
             </header>
 
+            <dialog id="modalClear" class="modal">
+                <div class="modal-box bg-bg-light">
+                    <h3 class="text-lg font-bold">Hello!</h3>
+                    <p class="py-4">
+                        Você irá apagar TODAS as tarefas existentes!
+                    </p>
+                    <div class="flex modal-action">
+                        <form method="dialog">
+                            <button class="btn bg-green text-cream" id="cancel">
+                                Cancelar
+                            </button>
+                            <button
+                                class="btn bg-orange text-bg"
+                                id="clearList"
+                            >
+                                Prosseguir
+                            </button>
+                        </form>
+                    </div>
+                </div>
+            </dialog>
+
+            <div class="container flex items-center justify-center">
+                <div class="flex w-200 h-7 mt-15 justify-end">
+                    <div id="trashCan" class="tooltip" data-tip="Limpar lista">
+                        <button type="button">
+                            <i class="fa-solid fa-trash-can"></i>
+                        </button>
+                    </div>
+                </div>
+            </div>
+
             <div class="flex items-center justify-center">
                 <div
-                    class="container flex-col bg-bg-light w-200 h-150 m-15 rounded-md justify-center justify-items-center content-center"
+                    class="container flex-col bg-bg-light w-200 h-150 ml-15 mr-15 mb-15 rounded-md justify-center justify-items-center content-center"
                 >
                     <!-- <p class="text-cream-dark md:text-h3">
                         Não há nenhuma tarefa -.-
@@ -83,5 +115,6 @@
             crossorigin="anonymous"
         ></script>
         <script type="module" src="/app/scripts/displayTasks.js"></script>
+        <script type="module" src="/app/scripts/cleanStorage.js"></script>
     </body>
 </html>
