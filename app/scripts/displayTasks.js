@@ -12,7 +12,7 @@ document.addEventListener("DOMContentLoaded", () => {
 
     tasks.forEach((task) => {
         const card = document.createElement("div");
-        card.className = "card bg-orange shadow p-6 text-bg";
+        card.className = "card bg-orange shadow p-6 text-bg m-5 max-w-96";
 
         card.innerHTML = `
             <h3 class="text-xl font-bold mb-2">${task.title}</h3>
